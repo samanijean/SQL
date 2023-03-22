@@ -1,0 +1,24 @@
+--Create Art Supplies Store database
+
+CREATE TABLE art_supplies (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, aisle INTEGER, shelf INTEGER);
+
+INSERT into art_supplies VALUES (1, "Canvas", 14.99, 4, 1);
+INSERT into art_supplies VALUES (2, "Scissors", 4.99, 1, 3);
+INSERT into art_supplies VALUES (3, "Pencils", 10.89, 1, 2);
+INSERT into art_supplies VALUES (4, "Acrylic Paint Set", 38.50, 4, 5);
+INSERT into art_supplies VALUES (5, "Watercolor Travel Kit", 24.99, 5, 6);
+INSERT into art_supplies VALUES (6, "Sharpies", 3.99, 1, 5);
+INSERT into art_supplies VALUES (7, "Notebook", 3.79, 7, 2);
+INSERT into art_supplies VALUES (8, "Gel Pens", 4.99, 1, 7);
+INSERT into art_supplies VALUES (9, "Pallet Knife", 2.99, 4, 3);
+INSERT into art_supplies VALUES (10, "Paint Brush", 5.79, 5, 3);
+INSERT into art_supplies VALUES (11, "Gum Eraser", .79, 1, 8);
+INSERT into art_supplies VALUES (12, "Pink Pearl Eraser", 1.99, 1, 8);
+INSERT into art_supplies VALUES (13, "Colored Pencils", 12.39, 8, 3);
+INSERT into art_supplies VALUES (14, "Easel", 49.99, 10, 1);
+INSERT into art_supplies VALUES (15, "Cardboard", 4.99, 8, 3);
+
+SELECT * FROM art_supplies ORDER BY price desc;
+
+
+SELECT sum(price) FROM art_supplies;
